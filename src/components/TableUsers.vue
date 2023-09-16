@@ -1,9 +1,9 @@
 <script setup lang="ts">
 // import { type PropType } from 'vue';
 // import type User from '@/interfaces/User';
-import { OrbitSpinner } from 'epic-spinners';
 import IconTrash from '@/components/icons/IconTrash.vue';
 import IconEdit from '@/components/icons/IconEdit.vue';
+import LoadingSpinner from '@/components/LoadingSpinner.vue';
 
 import { storeToRefs } from 'pinia';
 import { tableStore } from '@/store/tableStore';
@@ -73,18 +73,8 @@ const deleteUser = (user: User): any => {
             </tbody>
             <tbody v-else>
                 <tr>
-                    <td :colspan="3" style="position: relative">
-                        <OrbitSpinner
-                            style="
-                                position: absolute;
-                                top: 0;
-                                left: 50%;
-                                transform: translate(-50%, 5px);
-                            "
-                            :animation-duration="1200"
-                            :size="40"
-                            color="hsla(160, 100%, 37%, 1)"
-                        />
+                    <td :colspan="3">
+                        <LoadingSpinner />
                     </td>
                 </tr>
             </tbody>
