@@ -16,10 +16,10 @@ Developing with Vue 3 in Vite.
 
 [Click for DEMO Vue3 table](https://markficht.github.io/vue3-table-fake-data/)
 
-### Recommended IDE Setup
+## Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
-### Status
+## Status
 
 Recruitment task: <b>Project done</b>
